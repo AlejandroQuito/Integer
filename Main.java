@@ -2,13 +2,13 @@ public class Main
 {
     public static void main(String[] args)
     {
-
+        Container container = new Container();
+        container.count += 7843;
+        System.out.println(container.count);
         Integer number1 = 12345;
-        Integer number2 = 10;
-        Integer number3 = 5059191;
-        System.out.println("Сумма цифр равна:   " + sumDigits(number1));
-        System.out.println("Сумма цифр равна:   " + sumDigits(number2));
-        System.out.println("Сумма цифр равна:   " + sumDigits(number3));
+
+        System.out.println(sumDigits(number1));
+
 
     }
 
@@ -16,10 +16,20 @@ public class Main
     {
         //@TODO: write code here
         int sum = 0;
-        while (number != 0)
-        {
-            sum += number % 10;
-            number /= 10;
+        while (number != 0) {
+            String newNumber1 = number.toString();
+            newNumber1.length();
+            System.out.println(newNumber1.length());
+            int index = 0;
+            for (int index1 = 0; index1 <= newNumber1.length(); index1++) {
+
+            }
+            Integer indexInt = index;
+
+            String num = String.valueOf(newNumber1.charAt(index));
+            Integer numInt = Integer.parseInt(num);
+            sum = numInt;
+            break;
         }
         return sum;
     }
